@@ -6,7 +6,7 @@
 /*   By: ybecret <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/05 13:31:00 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/08 11:08:12 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/08 11:14:53 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,5 +47,7 @@ void				ft_putendl_fd(char const *s, int fd);
 void				ft_putendl(char const *s);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putnbr(int n);
+
+void				*ft_memset(void *s, int c, size_t n);
 
 #endif
