@@ -6,7 +6,7 @@
 /*   By: ybecret <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/05 13:31:00 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/08 13:57:40 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/08 14:08:35 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ size_t				ft_strlen(const char *s);
 char				*ft_strcpy(char *dst, const char *src);
 char				*ft_strdup(const char *s1);
 char				*ft_strchr(const char *s, int c);
+char				*ft_strcat(char *dest, const char *src);
 
 void				ft_putchar_fd(char c, int fd);
 void				ft_putchar(char c);
