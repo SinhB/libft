@@ -1,3 +1,4 @@
+
 #include "libft.h"
 
 int	ft_atoi(char *s)
@@ -21,10 +22,10 @@ int	ft_atoi(char *s)
       else
 	i++;
     }
-  while (s[i] >= '0' && s[i] <= '9')
+  while (ft_isdigit(s[i]))
     {
       result += s[i] - 48;
-      if (s[i + 1] >= '0' && s[i + 1] <= '9')
+      if (ft_isdigit(s[i]))
 	result *= 10;
       i++;
     }
