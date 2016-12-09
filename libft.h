@@ -49,6 +49,7 @@ char				*ft_strcat(char *dest, const char *src);
 char				*ft_strncat(char *dest, const char *src, size_t n);
 char				*ft_strstr(const char *big, const char *little);
 char				*ft_strnstr(const char *big, const char *little, size_t len);
+char				*ft_strnew(size_t size);
 
 void				ft_putchar_fd(char c, int fd);
 void				ft_putchar(char c);
