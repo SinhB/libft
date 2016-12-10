@@ -53,6 +53,7 @@ char				*ft_strnew(size_t size);
 
 void				ft_strclr(char *s);
 void				ft_strdel(char **as);
+void				ft_striter(char *s, void (*f)(char *));
 
 void				ft_putchar_fd(char c, int fd);
 void				ft_putchar(char c);
