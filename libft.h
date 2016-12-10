@@ -51,6 +51,7 @@ char				*ft_strstr(const char *big, const char *little);
 char				*ft_strnstr(const char *big, const char *little, size_t len);
 char				*ft_strnew(size_t size);
 
+void				ft_strclr(char *s);
 void				ft_strdel(char **as);
 
 void				ft_putchar_fd(char c, int fd);
