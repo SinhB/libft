@@ -50,6 +50,7 @@ char				*ft_strncat(char *dest, const char *src, size_t n);
 char				*ft_strstr(const char *big, const char *little);
 char				*ft_strnstr(const char *big, const char *little, size_t len);
 char				*ft_strnew(size_t size);
+char				*ft_strmap(char const *s, char (*f)(char));
 
 void				ft_strclr(char *s);
 void				ft_strdel(char **as);
