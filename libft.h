@@ -6,7 +6,7 @@
 /*   By: ybecret <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/05 13:31:00 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/11 14:36:46 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/11 14:39:29 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,6 +86,7 @@ void				*ft_memalloc(size_t size);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);
 
 t_list				*ft_lstnew(void const *content, size_t content_size);
+t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
