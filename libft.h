@@ -6,7 +6,7 @@
 /*   By: ybecret <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/05 13:31:00 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/11 14:21:03 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/11 14:23:14 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strtrim(char const *s);
+char				*ft_itoa(int n);
 
 char				**ft_strsplit(char const *s, char c);
 
