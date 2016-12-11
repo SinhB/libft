@@ -1,33 +1,40 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ybecret <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/12/11 13:28:52 by ybecret           #+#    #+#             */
+/*   Updated: 2016/12/11 13:32:25 by ybecret          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
 int	ft_atoi(char *s)
 {
-  int result;
-  int nega;
-  int i;
+	int result;
+	int nega;
+	int i;
 
-  result = 0;
-  nega = 1;
-  i = 0;
-  while (s[i] == 32 || s[i] == 9)
-    i++;
-  if (s[i] == '-' || s[i] == '+')
-    {
-      if (s[i] == '-')
+	result = 0;
+	nega = 1;
+	i = 0;
+	while (s[i] == 32 || s[i] == 9)
+		i++;
+	if (s[i] == '-' || s[i] == '+')
 	{
-	  nega = -1;
-	  i++;
+		if (s[i] == '-')
+			nega = -1;
+		i++;
 	}
-      else
-	i++;
-    }
-  while (ft_isdigit(s[i]))
-    {
-      result += s[i] - 48;
-      if (ft_isdigit(s[i]))
-	result *= 10;
-      i++;
-    }
-  return (result * nega);
+	while (ft_isdigit(s[i]))
+	{
+		result += s[i] - 48;
+		if (ft_isdigit(s[i]))
+			result *= 10;
+		i++;
+	}
+	return (result * nega);
 }
