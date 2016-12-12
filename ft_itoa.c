@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybecret <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/11 14:22:01 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/11 16:15:06 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/12 11:52:20 by Yann             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,10 +47,14 @@ char	*ft_itoa(int n)
 		n = -n;
 		new[i] = '-';
 	}
+	lennbr = 1;
+	while (n / lennbr)
+		lennbr *= 10;
+	k /= 10;
 	while (lennbr > 0)
 	{
 		new[i++] = n % 10 + 48;
-		lennbr--;
+		lennbr /= 10;
 	}
 	new[i] = '\0';
 	return (new);
