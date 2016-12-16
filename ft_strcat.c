@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/08 14:01:37 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/16 11:31:05 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/16 11:33:31 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,10 @@ char	*ft_strcat(char *dest, const char *src)
 
 	i = ft_strlen(dest);
 	while (*src)
-		dest[i++] = src[i++];
+	{
+		dest[i] = src[i];
+		i++;
+	}
 	dest[i] = '\0';
 	return (dest);
 }
