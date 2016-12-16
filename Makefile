@@ -6,7 +6,7 @@
 #    By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/12/16 09:32:39 by ybecret           #+#    #+#              #
-#    Updated: 2016/12/16 10:22:39 by ybecret          ###   ########.fr        #
+#    Updated: 2016/12/16 10:35:21 by ybecret          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,9 +74,8 @@ SRCS =	ft_atoi.c			\
 
 OBJ = $(SRCS:.c=.o)
 
-CC = gcc
-
-CFLAGS += -Wall -Wextra -Werror
+CC = cc
+CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 

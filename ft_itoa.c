@@ -6,13 +6,13 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/11 14:22:01 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/12 12:38:42 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/16 10:36:28 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_lennbr(int n)
+static size_t	ft_lennbr(int n)
 {
 	size_t i;
 
