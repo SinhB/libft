@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/11 14:37:27 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/16 11:08:19 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/16 11:23:56 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 	{
 		tmp1 = (*f)(lst);
 		if ((tmp->next = ft_lstnew(tmp1->content, tmp1->content_size)) == NULL)
-			return (NULL)
+			return (NULL);
 		tmp = tmp->next;
 		lst = lst->next;
 	}
