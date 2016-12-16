@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/11 14:22:01 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/16 10:36:28 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/16 10:48:51 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ char	*ft_itoa(int n)
 	lennbr = 1;
 	while (n / lennbr)
 		lennbr *= 10;
-	k /= 10;
+	i /= 10;
 	while (lennbr > 0)
 	{
 		new[i++] = n % 10 + 48;
