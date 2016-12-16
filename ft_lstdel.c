@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/11 14:30:43 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/12 12:29:36 by Yann             ###   ########.fr       */
+/*   Updated: 2016/12/16 10:54:43 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,12 @@
 
 void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {
+    t_list *i;
 
+    while (*alst)
+    {
+        i = (*alst)->next;
+        ft_lstdelone(alst, del);
+        *alst = i;
+    }
 }
