@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/11 13:59:15 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/12 12:39:56 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/16 23:04:59 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	if (!big)
 	{
 		if (*big == *little)
-			return (big);
+			return ((char*)big);
 		else
 			return (NULL);
 	}
@@ -28,7 +28,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	{
 		if (ft_strnequ(little, big, ft_strlen(little)))
 			if (ft_strlen(little) + i <= len)
-				return (big);
+				return ((char*)big);
 		i++;
 		big++;
 	}
