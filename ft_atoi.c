@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/11 13:28:52 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/17 17:56:14 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/17 18:47:27 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_atoi(char *s)
 {
 	long res;
 	long nega;
-	int i;
+	long i;
 
 	res = 0;
 	nega = 1;
