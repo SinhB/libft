@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/08 13:52:35 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/17 14:43:10 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/17 14:47:10 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,7 @@ char	*ft_strchr(const char *s, int c)
 	char *tmp;
 
 	tmp = (char*)s;
-	while (*tmp)
-	{
-		if (*tmp == c)
-			return (tmp);
+	while (*tmp && *tmp != c)
 		tmp++;
-	}
-	return (NULL);
+	return (*tmp == c ? tmp : NULL);
 }
