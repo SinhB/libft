@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/11 13:28:52 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/17 19:05:46 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/17 19:07:30 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_atoi(const char *s)
 			nega = -1;
 	}
 	res = 0;
-	while (s[i] && ft_isdigit(s[i])
+	while (s[i] && ft_isdigit(s[i]))
 	{
 		res += s[i] - 48;
 		if (ft_isdigit(s[i + 1]))
