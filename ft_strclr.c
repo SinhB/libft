@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/11 13:39:46 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/12 12:39:37 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/17 17:31:27 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 void	ft_strclr(char *s)
 {
-	ft_bzero(s, ft_strlen(s));
+	if (s)
+		ft_bzero(s, ft_strlen(s));
 }

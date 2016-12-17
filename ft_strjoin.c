@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/11 13:46:50 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/12 12:39:47 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/17 17:38:47 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*new;
 
+	if (!s1)
+		return (NULL);
 	if (!(new = ft_strnew(ft_strlen(s1) + ft_strlen(s2))))
 		return (NULL);
 	ft_strcpy(new, s1);

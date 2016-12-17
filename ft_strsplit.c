@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/11 14:19:25 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/17 13:52:05 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/17 17:40:59 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ char	**ft_strsplit(char const *s, char c)
     char    *tmp;
     char    **new;
 
+    if (!s)
+        return (NULL);
     n = ft_newlen((char*)s, c);
     if ((new = (char**)malloc(sizeof(char*) * (n + 1))) == NULL)
         return (NULL);

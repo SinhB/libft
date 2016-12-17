@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/11 13:42:27 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/17 15:08:41 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/17 17:36:36 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 int	ft_strequ(char const *s1, char const *s2)
 {
+	if (!s1 || !s2)
+		return (0);
 	return (ft_strcmp(s1, s2) == 0 ? 1 : 0);
 }

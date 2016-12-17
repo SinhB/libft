@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/11 14:16:18 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/12 12:39:59 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/17 17:39:26 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strtrim(char const *s)
 	size_t		j;
 
 	i = 0;
+	if (!s)
+		return (NULL);
 	while (ft_iswhitespace(s[i]))
 		i++;
 	if (!(s[i]))
