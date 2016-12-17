@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/05 13:33:24 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/12 12:39:26 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/17 17:24:23 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	write(fd, &c, 1);
+	write(fd, (unsigned char *)(&c), 1);
 }
