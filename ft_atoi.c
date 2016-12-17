@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/11 13:28:52 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/12 12:38:48 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/17 14:14:42 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 int	ft_atoi(char *s)
 {
-	int result;
+	int res;
 	int nega;
 	int i;
 
-	result = 0;
+	res = 0;
 	nega = 1;
 	i = 0;
 	while (ft_iswhitespace(s[i]))
@@ -29,12 +29,12 @@ int	ft_atoi(char *s)
 			nega = -1;
 		i++;
 	}
-	while (ft_isdigit(s[i]))
+	while (s[i] && ft_isdigit(s[i]))
 	{
-		result += s[i] - 48;
-		if (ft_isdigit(s[i]))
-			result *= 10;
+		res += s[i] - 48;
+		if (ft_isdigit(s[i + 1]))
+			res *= 10;
 		i++;
 	}
-	return (result * nega);
+	return (res * nega);
 }

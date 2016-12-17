@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/11 13:59:15 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/16 23:04:59 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/17 14:09:26 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	int i;
 
 	i = 0;
-	if (!big)
+	if (!*big)
 	{
 		if (*big == *little)
 			return ((char*)big);
