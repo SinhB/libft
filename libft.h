@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/05 13:31:00 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/16 10:23:28 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/17 19:01:08 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int					ft_toupper(int c);
 int					ft_tolower(int c);
 int					ft_iswhitespace(int c);
 
-int					ft_atoi(char *s);
+int					ft_atoi(const char *s);
 
 int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);

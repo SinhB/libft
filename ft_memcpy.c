@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/08 11:22:48 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/16 11:29:19 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/17 18:58:27 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 	tmp = dest;
 	while (n--)
-	{
 		*tmp++ = *(unsigned char*)src++;
-	}
 	return (dest);
 }
