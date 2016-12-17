@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/08 13:52:35 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/17 14:06:30 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/17 14:43:10 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strchr(const char *s, int c)
 	{
 		if (*tmp == c)
 			return (tmp);
-		s++;
+		tmp++;
 	}
 	return (NULL);
 }
