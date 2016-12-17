@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/11 13:45:31 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/17 17:32:40 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/17 17:47:51 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,9 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	if (s)
 	{
 		while (*s)
-			(*f)(i++, s++);
+		{
+			(*f)(i++, s);
+			s++;
+		}
 	}
 }
