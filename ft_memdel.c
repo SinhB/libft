@@ -6,14 +6,15 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/11 13:38:32 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/17 17:28:28 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/19 20:17:40 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 void	ft_memdel(void **ap)
-{	if (ap)
+{
+	if (ap)
 	{
 		free(*ap);
 		*ap = NULL;

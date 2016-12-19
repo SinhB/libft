@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/11 14:22:01 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/17 19:24:37 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/19 20:08:47 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ static size_t	ft_lennbr(int n)
 	return (i);
 }
 
-char	*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
 	char	*new;
 	size_t	i;
@@ -42,7 +42,7 @@ char	*ft_itoa(int n)
 	j = 1;
 	if (!(new = ft_strnew(ft_lennbr(n))))
 		return (NULL);
-	if (n == 0 || n == - 2147483648)
+	if (n == 0 || n == -2147483648)
 		return (n == 0 ? ft_strdup("0") : ft_strdup("-2147483648"));
 	if (n < 0)
 	{
