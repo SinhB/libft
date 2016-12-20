@@ -6,7 +6,7 @@
 #    By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/12/16 09:32:39 by ybecret           #+#    #+#              #
-#    Updated: 2016/12/16 10:35:21 by ybecret          ###   ########.fr        #
+#    Updated: 2016/12/20 14:38:12 by ybecret          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ SRCS =	ft_atoi.c			\
 		ft_isdigit.c		\
 		ft_isprint.c		\
 		ft_iswhitespace.c	\
+		ft_sqrt.c			\
 		ft_itoa.c			\
 		ft_lstadd.c			\
 		ft_lstdel.c			\
