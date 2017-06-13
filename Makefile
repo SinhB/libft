@@ -6,7 +6,7 @@
 #    By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/12/16 09:32:39 by ybecret           #+#    #+#              #
-#    Updated: 2016/12/20 14:43:53 by ybecret          ###   ########.fr        #
+#    Updated: 2017/06/13 11:27:52 by ybecret          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,6 +45,7 @@ SRCS =	ft_atoi.c					\
 		ft_putnbr.c					\
 		ft_putstr_fd.c				\
 		ft_putstr.c					\
+		ft_strfind.c				\
 		ft_strcat.c					\
 		ft_strchr.c					\
 		ft_strclr.c					\
