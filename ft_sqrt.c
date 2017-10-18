@@ -1,28 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ybecret <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/11 13:45:31 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/19 21:24:23 by ybecret          ###   ########.fr       */
+/*   Created: 2016/11/16 16:54:07 by ybecret           #+#    #+#             */
+/*   Updated: 2016/11/16 17:08:22 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+int	ft_sqrt(int nb)
 {
-	unsigned int i;
+	int i;
 
 	i = 0;
-	if (s && f)
-	{
-		while (*s)
-		{
-			f(i++, s);
-			s++;
-		}
-	}
+	while (i * i < nb)
+		i++;
+	if (i * i == nb)
+		return (i);
+	else
+		return (0);
 }

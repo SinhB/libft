@@ -6,7 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/11 14:35:22 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/16 11:21:57 by ybecret          ###   ########.fr       */
+/*   Updated: 2016/12/19 21:34:31 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,12 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
-	while (lst)
+	if (lst && f)
 	{
-		(*f)(lst);
-		lst = lst->next;
+		while (lst)
+		{
+			(*f)(lst);
+			lst = lst->next;
+		}
 	}
 }

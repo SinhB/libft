@@ -1,28 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ybecret <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/11 13:45:31 by ybecret           #+#    #+#             */
-/*   Updated: 2016/12/19 21:24:23 by ybecret          ###   ########.fr       */
+/*   Created: 2016/11/16 16:30:04 by ybecret           #+#    #+#             */
+/*   Updated: 2016/11/16 16:35:12 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+int	ft_recursive_factorial(int nb)
 {
-	unsigned int i;
-
-	i = 0;
-	if (s && f)
-	{
-		while (*s)
-		{
-			f(i++, s);
-			s++;
-		}
-	}
+	if (nb == 1 || nb == 0)
+		return (1);
+	if (nb < 0 || nb >= 13)
+		return (0);
+	else
+		return (ft_recursive_factorial(nb - 1) * nb);
 }

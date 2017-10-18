@@ -6,18 +6,22 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/16 15:15:51 by ybecret           #+#    #+#             */
-/*   Updated: 2017/10/18 19:44:40 by ybecret          ###   ########.fr       */
+/*   Updated: 2017/10/18 19:48:14 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strfind(char *str, char c)
+int	ft_strfind(char *str, char c)
 {
-    while(str)
-    {
-        if (c)
-            return (1);
-    }
-    return (0);
+	int i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] == c)
+			return (1);
+		i++;
+	}
+	return (0);
 }

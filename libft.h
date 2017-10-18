@@ -6,7 +6,11 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/05 13:31:00 by ybecret           #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2017/10/18 19:44:30 by ybecret          ###   ########.fr       */
+=======
+/*   Updated: 2017/06/13 11:26:53 by ybecret          ###   ########.fr       */
+>>>>>>> 1866ea4745c6a5ef127cd9b1effb7483af2df732
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +36,8 @@ int					ft_isprint(int c);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
 int					ft_iswhitespace(int c);
+int					ft_sqrt(int nb);
+int					ft_recursive_factorial(int nb);
 
 int					ft_atoi(const char *s);
 
@@ -52,7 +58,8 @@ char				*ft_strrchr(const char *s, int c);
 char				*ft_strcat(char *dest, const char *src);
 char				*ft_strncat(char *dest, const char *src, size_t n);
 char				*ft_strstr(const char *big, const char *little);
-char				*ft_strnstr(const char *big, const char *little, size_t len);
+char				*ft_strnstr(const char *big, const char *little,
+					size_t len);
 char				*ft_strnew(size_t size);
 char				*ft_strmap(char const *s, char (*f)(char));
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
