@@ -6,11 +6,7 @@
 /*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/05 13:31:00 by ybecret           #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2017/10/18 19:44:30 by ybecret          ###   ########.fr       */
-=======
-/*   Updated: 2017/06/13 11:26:53 by ybecret          ###   ########.fr       */
->>>>>>> 1866ea4745c6a5ef127cd9b1effb7483af2df732
+/*   Updated: 2017/10/20 15:30:56 by ybecret          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +16,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
+# include "includes/get_next_line.h"
 
 typedef struct		s_list
 {
