@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   print_bits.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybecret <ybecret@student.42.fr>            +#+  +:+       +#+        */
+/*   By: yabecret <yabecret@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/01/17 16:54:15 by ybecret           #+#    #+#             */
-/*   Updated: 2019/04/03 18:52:41 by yabecret         ###   ########.fr       */
+/*   Created: 2018/11/12 18:35:42 by yabecret          #+#    #+#             */
+/*   Updated: 2018/11/14 10:43:47 by yabecret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#include "libft.h"
 
-# include "libft.h"
-
-# define GNL_BUFF_SIZE 1
-
-typedef struct			s_fd
+void	print_bits(unsigned char octet)
 {
-	char				*buff;
-	int					fd;
-	struct s_fd			*next;
-}						t_fd;
+	int z;
 
-int						get_next_line(const int fd, char **line);
-
-#endif
+	z = 128;
+	while (z > 0)
+	{
+		if (octet & z)
+			write(1, "1", 1);
+		else
+			write(1, "0", 1);
+		z >>= 1;
+	}
+}
