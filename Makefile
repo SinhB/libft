@@ -6,7 +6,7 @@
 #    By: yabecret <yabecret@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/13 19:43:10 by yabecret          #+#    #+#              #
-#    Updated: 2019/04/03 18:53:51 by yabecret         ###   ########.fr        #
+#    Updated: 2019/04/08 18:23:49 by yabecret         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,7 @@ LDLIBS		= -lft
 
 SRC_NAME 	=	ft_atoi_base.c										\
 				ft_atoi.c											\
+				ft_atoll.c											\
 				ft_bzero.c											\
 				ft_cntdigit.c										\
 				ft_convert_base.c									\
@@ -139,6 +140,7 @@ SRC_NAME 	=	ft_atoi_base.c										\
 				$(PRINTF_PATH)/$(SRC_PATH)/manage_colors.c			\
 				$(PRINTF_PATH)/$(SRC_PATH)/options_padding.c		\
 				$(PRINTF_PATH)/$(SRC_PATH)/options_check.c			\
+				$(PRINTF_PATH)/$(SRC_PATH)/options.c				\
 				$(PRINTF_PATH)/$(SRC_PATH)/parse_arg.c				\
 
 #OBJ	   = $(SRCS:.c=.o)

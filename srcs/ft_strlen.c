@@ -6,7 +6,7 @@
 /*   By: yabecret <yabecret@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 11:22:07 by yabecret          #+#    #+#             */
-/*   Updated: 2018/11/08 11:22:09 by yabecret         ###   ########.fr       */
+/*   Updated: 2019/04/08 18:27:05 by yabecret         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,18 @@ size_t	ft_strlen(const char *s)
 	i = 0;
 	while (s[i])
 		i++;
+	return (i);
+}
+
+size_t	ft_wstrlen(wchar_t *s)
+{
+	int i;
+
+	i = 0;
+	while (*s != L'\0')
+	{
+		i += w_charlen(*s);
+		s++;
+	}
 	return (i);
 }
