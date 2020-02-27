@@ -2,7 +2,7 @@
 
 Create my own lib in C including the following functions :
 
-• get_next_line 
+• get_next_line<br/>
 • ft_printf 
 • ft_dprintf 
 • ft_memset
