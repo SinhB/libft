@@ -2,9 +2,9 @@
 
 Create my own lib in C including the following functions :
 
-• get_next_line
-• ft_printf
-• ft_dprintf
+• get_next_line 
+• ft_printf 
+• ft_dprintf 
 • ft_memset
 • ft_bzero
 • ft_memalloc
