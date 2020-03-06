@@ -1,5 +1,9 @@
 # Libft
 
+<h1>Installation :</h1><br/>
+
+<pre><code>git clone https://github.com/SinhB/libft.git & cd libft & make</code></pre><br/>
+
 Create my own lib in C including the following functions :
 
 • get_next_line<br/>
